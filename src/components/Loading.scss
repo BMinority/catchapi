@@ -1,0 +1,28 @@
+.bc-loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+
+  .spinner {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #e3350d;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #444;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

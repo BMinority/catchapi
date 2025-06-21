@@ -1,0 +1,18 @@
+@import './reset';
+@import './variables';
+@import '../components/Header.scss';
+@import '../components/Loading.scss';
+@import '../components/PokemonCard.scss';
+@import '../pages/Pokemons.scss';
+@import '../pages/Types.scss';
+@import '../pages/Abilities.scss';
+@import '../pages/Items.scss';
+@import '../pages/Moves.scss';
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}

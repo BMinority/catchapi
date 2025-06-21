@@ -1,0 +1,70 @@
+.bc-pokemon-page {
+  padding: 1rem;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .bc-search-input {
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #e3350d;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+
+    &:focus {
+      border-color: #c62807;
+    }
+  }
+
+  .bc-pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .bc-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+
+    button {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #e3350d;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.2s ease;
+
+      &:hover:not(:disabled) {
+        background-color: #c62807;
+      }
+
+      &:disabled {
+        background-color: #aaa;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .bc-page-info {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+}

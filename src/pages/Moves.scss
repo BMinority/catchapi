@@ -1,0 +1,23 @@
+.bc-move-page {
+    padding: 1rem;
+
+    h2 {
+        text-align: center;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 0.5rem;
+        list-style: none;
+        padding: 0;
+
+        li {
+            background: #ede7f6;
+            padding: 0.5rem;
+            border-radius: 6px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    }
+}
