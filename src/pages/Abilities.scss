@@ -1,23 +1,116 @@
 .bc-ability-page {
-    padding: 1rem;
+  padding: 1rem;
 
-    h2 {
-        text-align: center;
+  h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+
+  .bc-ability-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+
+    button {
+      padding: 0.5rem 1.25rem;
+      background-color: #f0f0f0;
+      border: 2px solid #e3350d;
+      border-radius: 999px;
+      font-weight: bold;
+      color: #e3350d;
+      cursor: pointer;
+      text-transform: capitalize;
+      transition: all 0.2s ease-in-out;
+
+      &:hover,
+      &.active {
+        background-color: #e3350d;
+        color: white;
+      }
+    }
+  }
+
+  .bc-ability-results {
+    background-color: #fff;
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    margin: 0 auto 3rem auto;
+    position: relative;
+
+    h3 {
+      text-align: center;
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+
+      span {
+        color: #e3350d;
+        text-transform: capitalize;
+      }
     }
 
-    ul {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-        gap: 0.5rem;
-        list-style: none;
-        padding: 0;
+    .bc-pokemon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
 
-        li {
-            background: #e3f2fd;
-            padding: 0.5rem;
-            border-radius: 6px;
-            text-align: center;
-            text-transform: capitalize;
+    .bc-pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+
+      button {
+        padding: 0.4rem 1rem;
+        border: 2px solid #e3350d;
+        border-radius: 999px;
+        background-color: #fff;
+        color: #e3350d;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:disabled {
+          border-color: #ccc;
+          color: #ccc;
+          cursor: default;
         }
+
+        &:not(:disabled):hover {
+          background-color: #e3350d;
+          color: white;
+        }
+      }
+
+      span {
+        font-weight: bold;
+        color: #555;
+      }
     }
+
+    .bc-back-to-top {
+      display: block;
+      margin: 0 auto;
+      padding: 0.5rem 1.25rem;
+      background-color: #e3350d;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: #cc2e0c;
+      }
+    }
+  }
 }
