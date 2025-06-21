@@ -1,23 +1,31 @@
 .bc-card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    text-align: center;
-    transition: transform 0.2s;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  user-select: none;
 
-    img {
-        width: 100px;
-        height: 100px;
-    }
+  img {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+  }
 
-    h3 {
-        margin-top: 0.5rem;
-        font-size: 1rem;
-        text-transform: capitalize;
-    }
+  h3 {
+    font-size: 1.1rem;
+    color: #333;
+    text-transform: capitalize;
+    margin: 0;
+  }
 
-    &:hover {
-        transform: scale(1.05);
-    }
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    outline: none;
+  }
 }
